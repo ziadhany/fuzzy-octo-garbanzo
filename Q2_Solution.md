@@ -83,8 +83,8 @@ sudo iptables -L -n -v | grep ':80\|:443'
 Fix: Allow traffic on port 80/443:
 ```bash
 
-    sudo firewall-cmd --add-port=80/tcp --permanent  # For firewalld
-    sudo firewall-cmd --reload
+sudo firewall-cmd --add-port=80/tcp --permanent  # For firewalld
+sudo firewall-cmd --reload
 ```
 
 Service Binding to Localhost
